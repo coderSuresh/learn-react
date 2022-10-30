@@ -1,0 +1,16 @@
+@use "colors";
+
+.main-content {
+    padding: 0 36px;
+    .title {
+        font-size: 18px;
+        color: colors.$white;
+        margin-top: 25px;
+        margin-bottom: 5px;
+    }
+
+    .content {
+        font-size: 10.24px;
+        color: colors.$gray-white;
+    }
+}

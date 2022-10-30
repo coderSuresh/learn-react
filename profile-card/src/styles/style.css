@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+.intro {
+  text-align: center;
+}
+
+.intro__name {
+  margin-top: 20px;
+  font-size: 25px;
+  color: #FFFFFF;
+}
+
+.intro__position {
+  color: #F3BF99;
+  font-size: 14px;
+  margin-top: 7px;
+}
+
+.intro__web {
+  font-size: 12px;
+  color: #F5F5F5;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 115px;
+  font-size: 14px;
+  height: 34px;
+  margin: 0 8px 5px 8px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.button:active {
+  opacity: 0.8;
+}
+.button img {
+  margin-right: 8px;
+}
+
+.linkedin-btn {
+  background-color: #5093E2;
+  color: #FFFFFF;
+}
+
+.main-content {
+  padding: 0 36px;
+}
+.main-content .title {
+  font-size: 18px;
+  color: #FFFFFF;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+.main-content .content {
+  font-size: 10.24px;
+  color: #DCDCDC;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 30px;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #161619;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.footer img {
+  margin: 0 15px 0 15px;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.main {
+  background-color: #23252C;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
+}
+
+.card {
+  background-color: #1A1B21;
+  width: 80%;
+  margin: 40px auto;
+  max-width: 317px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.card .hero-img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

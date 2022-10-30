@@ -1,0 +1,52 @@
+@use "./intro";
+@use "./colors";
+@use "./buttons";
+@use "./flexbox";
+@use "./main";
+@use "./footer";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.main {
+    background-color: colors.$bg-body;
+    min-height: 100vh;
+    @include flexbox.FlexBox();
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+}
+
+.card {
+    background-color: colors.$bg-main;
+    width: 80%;
+    margin: 40px auto;
+    max-width: 317px;
+    @include flexbox.FlexBox();
+    flex-direction: column;
+    border-radius: 10px;
+    .hero-img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+}

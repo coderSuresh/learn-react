@@ -1,0 +1,28 @@
+@use "colors";
+@use "flexbox";
+.buttons {
+    @include flexbox.FlexBox();
+}
+
+.button {
+    @include flexbox.FlexBox();
+    width: 115px;
+    font-size: 14px;
+    height: 34px;
+    margin: 0 8px 5px 8px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    &:active {
+        opacity: 0.8;
+    }
+    img {
+        margin-right: 8px;
+    }
+}
+
+.linkedin-btn {
+    background-color: colors.$linkedin-color;
+    color: colors.$white;
+}
