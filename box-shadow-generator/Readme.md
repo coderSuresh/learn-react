@@ -33,7 +33,7 @@ I built this because I wanted to learn how to use Tailwind CSS and React to buil
 ## How to use
 1. Go to [Box Shadow Generator](https://generate-box-shadow.netlify.app/)
 2. Select the card color and the shadow color
-3. Slide and slider to adjust the shadow
+3. Slide the sliders to adjust the shadow
 4. Copy the CSS code
 
 ## How to contribute
