@@ -1,6 +1,6 @@
 # Box Shadow Generator
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0dd0fa6d-e4db-4c31-8a5d-bf4e6c0bea32/deploy-status)](https://app.netlify.com/sites/generate-box-shadow/deploys)
+![Netlify Status](https://api.netlify.com/api/v1/badges/0dd0fa6d-e4db-4c31-8a5d-bf4e6c0bea32/deploy-status)
 
 ## A simple tool to generate box-shadow CSS code
 
