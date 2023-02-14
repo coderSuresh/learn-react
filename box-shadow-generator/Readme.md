@@ -21,11 +21,11 @@ This is a simple tool to generate box-shadow CSS code. It is built using React a
 ## Screenshot
 
 ### Mobile
-<img src="../Screenshots/box-shadow-generator-mobile.png" style="max-width: 200px">
+<img src="../Screenshots/box-shadow-generator-mobile.png" width = 200>
 
 ### Desktop
 
-<img src="../Screenshots/box-shadow-generator.png" style="max-width: 400px">
+<img src="../Screenshots/box-shadow-generator.png" width = 400>
 
 ## Why did I build this?
 I built this because I wanted to learn how to use Tailwind CSS and React to build something. I also wanted to build something that I could use in my projects.
