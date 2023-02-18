@@ -11,6 +11,7 @@ function App() {
   const [spreadRadius, setSpreadRadius] = useState(0)
   const [opacity, setOpacity] = useState(0.2)
   const [hexaShadowColor, setHexaShadowColor] = useState('64646f33')
+  const [inset, setInset] = useState(false)
 
   const createHEXA = () => {
     const hexRGB = shadowColor.slice(1)
@@ -45,6 +46,10 @@ function App() {
   const updateOpacity = (e) => {
     setOpacity(e.target.value)
     createHEXA()
+  }
+
+  const updateInset = (e) => {
+    setInset(e.target.checked)
   }
 
   return (
@@ -85,14 +90,22 @@ function App() {
               <label htmlFor="shadow-opacity">Shadow Opacity</label>
               <input type="range" value={opacity} min={0} max={1.01} step={0.01} onInput={updateOpacity} name="shadow-opacity" id="shadow-opacity" />
             </div>
+            <div className="mt-4 flex items-center">
+              <label htmlFor="inset">Inset</label>
+              <input type="checkbox" className='ml-3' checked={inset} onChange={updateInset} name="inset" id="inset" />
+            </div>
           </div>
         </div>
 
         <div className='bg-white shadow-lg p-6 md:w-5/12 w-4/5 m-8'>
           <h2 className='text-2xl font-bold mt-4'>Preview</h2>
-          <div className='mt-4 h-52 w-52 rounded' style={{ backgroundColor: `${color}`, boxShadow: `${offsetX}px ${offsetY}px ${blurRadius}px ${spreadRadius}px #${hexaShadowColor}` }}>
+          <div className='mt-4 h-52 w-52 rounded' style={{ backgroundColor: `${color}`, boxShadow: `${inset === true ? 'inset' : ''} ${offsetX}px ${offsetY}px ${blurRadius}px ${spreadRadius}px #${hexaShadowColor}` }}>
           </div>
-          <p className='mt-8'>box-shadow: {`${offsetX}px ${offsetY}px ${blurRadius}px ${spreadRadius}px #${hexaShadowColor}`}</p>
+          <pre className='mt-8 overflow-auto bg-gray-100 p-4'>
+            <code className="language-css">
+              {`.yourClassOrID {\n\tbox-shadow: ${inset === true ? 'inset' : ''} ${offsetX}px ${offsetY}px ${blurRadius}px ${spreadRadius}px #${hexaShadowColor};\n}`}
+            </code>
+          </pre>
         </div>
       </div>
       <p className='text-center mt-8 mb-4'>Developed by: <a href="https://github.com/coderSuresh" className='text-red-800' target={'_blank'}>Suresh Dahal</a></p>
