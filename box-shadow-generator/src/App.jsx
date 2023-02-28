@@ -103,7 +103,7 @@ function App() {
           </div>
           <pre className='mt-8 overflow-auto bg-gray-100 p-4'>
             <code className="language-css">
-              {`.yourClassOrID {\n\tbox-shadow: ${inset === true ? 'inset' : ''} ${offsetX}px ${offsetY}px ${blurRadius}px ${spreadRadius}px #${hexaShadowColor};\n}`}
+              {`box-shadow: ${inset === true ? 'inset' : ''} ${offsetX}px ${offsetY}px ${blurRadius}px ${spreadRadius}px #${hexaShadowColor};`}
             </code>
           </pre>
         </div>
