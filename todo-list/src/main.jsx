@@ -6,10 +6,12 @@ import './App.css'
 import AddTodo from './components/AddTodo.jsx'
 import Layout from './Layout.jsx'
 import ViewTodo from './components/ViewTodo.jsx'
+import ErrorPage from './components/ErrorPage.jsx'
 
 const router = createBrowserRouter([
   {
     element: <Layout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: '/',
@@ -22,7 +24,7 @@ const router = createBrowserRouter([
       {
         path: '/view-tasks',
         element: <ViewTodo />
-      }
+      },
     ]
   },
 ])
