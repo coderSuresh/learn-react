@@ -3,10 +3,10 @@ import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.jsx'
 import './App.css'
-import AddTodo from './components/AddTodo.jsx'
+import AddTodo from './pages/AddTodo'
 import Layout from './Layout.jsx'
-import ViewTodo from './components/ViewTodo.jsx'
-import ErrorPage from './components/ErrorPage.jsx'
+import ViewTodo from './pages/ViewTodo'
+import ErrorPage from './pages/ErrorPage'
 
 const router = createBrowserRouter([
   {

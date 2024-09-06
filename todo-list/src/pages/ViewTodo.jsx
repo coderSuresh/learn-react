@@ -1,6 +1,6 @@
 import React from 'react'
-import { fetchData } from './fetchData'
-import RenderTodo from './RenderTodo'
+import { fetchData } from '../components/fetchData'
+import RenderTodo from '../components/RenderTodo'
 
 const ViewTodo = () => {
 
